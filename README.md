@@ -1,6 +1,8 @@
 [![PyPI](https://img.shields.io/pypi/v/cache_me_outside.svg?style=flat-square)](https://pypi.python.org/pypi/cache_me_outside) [![Travis](https://img.shields.io/travis/mdmedley/cache_me_outside.svg?style=flat-square)](https://travis-ci.org/mdmedley/cache_me_outside)
 
 # Cache Me Outside
+[![Cache Me Outside](https://memecrunch.com/meme/BQHKE/cache-me-outside/image.png?w=500&c=1)
+
 So you've got an annoyingly slow method in your script or library that you want make
 faster through caching? Well ```cache_me_outside``` is a fun module that will allow
 you to do just that!
