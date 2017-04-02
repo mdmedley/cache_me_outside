@@ -1,11 +1,11 @@
-from random import randint
+from random import random
 
-import cache_me_outside
+from cache_me_outside import cache_me_outside
 
 
 @cache_me_outside()
 def foo():
-    return randint()
+    return random()
 
 
 def test_execution():
