@@ -29,4 +29,4 @@ Want to contribute? Great! Fork and submit a pull request!
 
 ### Alternatives
 - [Python 2](https://github.com/jaraco/backports.functools_lru_cache)
-- [Python 3](hhttps://docs.python.org/3.4/library/functools.html#functools.lru_cache)
+- [Python 3](https://docs.python.org/3.4/library/functools.html#functools.lru_cache)
