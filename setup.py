@@ -1,7 +1,7 @@
 from setuptools import setup
 from sys import version_info
 
-__version__ = '0.1'
+__version__ = '1.0'
 
 requirements = []
 # If Python version is lower than 3.2 require backports.functools_lru_cache
@@ -26,12 +26,15 @@ setup(
     keywords=['cache', 'caching', 'python cache'],
     url='https://github.com/mdmedley/cache_me_outside',
     classifiers=(
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 3',
-        'Topic :: Software Development :: Libraries',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Software Development :: Libraries'
+        'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities'
     ))
