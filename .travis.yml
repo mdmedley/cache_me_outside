@@ -10,13 +10,11 @@ script:
   - flake8
   - python setup.py test
 deploy:
-    provider: pypi
-    user: mdmedley
+  provider: pypi
+  user: mdmedley
+  password:
+    secure: SWO6CbE8U5say5BlLqkmtuOVoPMT4KSWjsk/TajKe5d09ld+YAcMps8k5EhUvmLcD9SG61Ay/U4wQ+z47tXs1/mnd/8V6HCkHC2xEUhX/r2Uf80x3ADkC8eP8GECsFDpHO7leznT3PJ84Fc9gwbKUoNiL6vsnWIgUYJqU4VIYSSWuUeiD6XVUOSssp1V1gRgxLLCBUVU1RJFfRh3QNWb54+pZPFZ+rIa3pWgCVwCOoPNwiZ59Q0uaLRD/2+W/0vcEbstxkvTwjFi+FddY+UuWlruuqcsVYBUkKl6crmLtR0kNki82WM+yvd6vVgcPsItJHcq07JANPRoWC6LVx0b2VnkBlRelf5koeBpGoavCTTz2uyvtJTdIlhlrCGQFM2htUvoekCQ57gGitqq0hhN+MUFcPF4LTWPyDyRrkRiQ+JvIAPlak6Eysxck2ou28PM3GmfApFqbojNrs3bf7dtwIF39DiO8Gyp1OQF8fthwP0Qm/7b2Q3le1P0C8IZI5q3K97f/eeOo36klRzMoVLWwIH47luxQNDpjHY1tkpgpjBiwMkbrmj/rp0K3dT2mp4YKtC25yRT8SeSh5M6WNANnZ2UxF7WxDcjBsYouylJ+VS9d660DDvyisbcIJNtIiX56wBol+W7ZonvdI4EeSNgQ13YXjad58h1hvCGfKoFaD4=
+  on:
+    tags: true
     distributions: sdist bdist_wheel
-    password:
-    secure: Tod47Bo2MxJ/Mnpv1MoG735pfYHx451VKv2m01Rzb4qGM9A0IKiwV9vtdkiabpHoaty459V4iMExv63tImn2iktCN3Gr1K1Hw5vxNgA2i7a4axU2Yiil6F3kY2I02p5vHuN7ZptGv54ztFiq+zcZHz9KEbIEikN14zMIIywTonX9gd+nbuT4m+JbdleNlcR9xrVK34Hehkn8tua704PS7k476wHKDNvjtFCSw905GU0Y0PnbD6nqZA8dbmNErg67nEYrlUamn2bMvsq76nqgQ3RF4g+tlME3OnXN4gW2HP3Dj1NIQziDCaTfXkhvn7E1fQqKbxLdaN646u43jPJC6nK4TgOpWivSX9bTw4bRTuwiokLDEunSNSI9LRydQRk34VM4xJ3OIc58muXkgKfa331c2DbwjrVZ4SxguopbPasyM3y04+XMRriAfDToHvTTOTPf7U9U5zomUzDQDWJYj8lLwx4DXjIQvuONzclQ82TS7kJk0U9b+d/i/ERL+vGADpTzONywYuPtQTUpK0rJxV0qjUxfnJINagDjs7ISa1wdwex9aVp/C5+jehozs/gW1WnM0kYuck8RYm05SFk+Rbp5zoQvieQMb1zjy44ONAhCcUZQ2JOeBipjnLlPdeSHttqt/mB+QK4BwKUxwnDfdvq77rKXrS5KVVgthC9pe1I=
-    on:
-      branch: master
-      tags: true
-      condition: $TRAVIS_PYTHON_VERSION = "2.7"
-      repo: mdmedley/cache_me_outside
+    repo: mdmedley/cache_me_outside
