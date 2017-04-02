@@ -1,11 +1,12 @@
 language: python
 python:
     - '2.7'
+    - '3.5'
 install:
     - python setup.py install
     - pip install flake8
 script:
-    - flake8 cache_me_outside.py
+    - flake8
     - python setup.py test
 deploy:
     - provider: pypi
@@ -16,4 +17,5 @@ deploy:
       on:
         branch: master
         tags: true
-        repo: mdmeley/cache_me_outside
+        condition: $TRAVIS_PYTHON_VERSION = "2.7"
+        repo: mdmedley/cache_me_outside
