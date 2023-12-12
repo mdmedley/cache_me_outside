@@ -4,7 +4,7 @@
 ![Cache Me Outside](https://memecrunch.com/meme/BQHKE/cache-me-outside/image.png?w=500&c=1)
 
 So you've got an annoyingly slow method in your script or library that you want make
-faster by caching? Well ```cache_me_outside``` is a fun module that will allow you to do just that!
+faster by caching? Well ```cache_me_outside``` is a fun module that will allow you to do just dat!
 
 ### Version
 v1.0
